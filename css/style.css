@@ -1,0 +1,65 @@
+.control {
+    display: flex;
+    position: relative;
+    font-size: 24rem;
+    background-color: #f0f0f0;
+    height: 97vh;
+    border-radius: 10%;
+}
+
+.vol {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vol-on {
+    color: green;
+}
+
+.vol-off {
+    color: red;
+}
+
+.mic {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic-on {
+    color: green;
+}
+
+.mic-off {
+    color: red;
+}
+
+@media (max-width: 1020px) {
+    .control {
+        font-size: 18rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .control {
+        font-size: 12rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .control {
+        flex-direction: column;
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .control {
+        font-size: 6rem;
+    }
+}

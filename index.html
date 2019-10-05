@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>audio</title>
+</head>
+
+<body>
+    <div class="control">
+        <div class="mic">
+            <i class="fas fa-microphone mic-on" id="mic"></i>
+        </div>
+        <div class="vol">
+            <i class="fas fa-volume-up vol-on" id="vol"></i>
+        </div>
+    </div>
+
+    <script>
+        var mic = document.getElementById("mic")
+        var vol = document.getElementById("vol")
+
+        mic.addEventListener("click", mic_act)
+        vol.addEventListener("click", vol_act)
+
+        function vol_act() {
+            if (vol.className == "fas fa-volume-mute vol-off") {
+                vol.className = "fas fa-volume-up vol-on"
+            } else {
+                vol.className = "fas fa-volume-mute vol-off"
+            }
+        }
+
+        function mic_act() {
+            if (mic.className == "fas fa-microphone-slash mic-off") {
+                mic.className = "fas fa-microphone mic-on"
+            } else {
+                mic.className = "fas fa-microphone-slash mic-off"
+            }
+        }
+    </script>
+</body>
+
+</html>
